@@ -14,8 +14,8 @@
             <h1>Minha agenda</h1>
         </header>
         <br />
-        <main>
-            <form id="formulario" action>
+        <div class="agenda">
+            <form id="formulario">
                 <input id="nome" type="text" required placeholder="Nome do contato">
                 <input id="fone" type="tel" required placeholder="Ex: 84996085874">
                 <button type="submit">Cadastrar</button>
@@ -27,15 +27,18 @@
                         <th>Telefone do contato</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="tbody-tabela">
                     <tr>
-                        <td></td>
-                        <td></td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                    </tr>
+                </tfoot>
             </table>
-        </main>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

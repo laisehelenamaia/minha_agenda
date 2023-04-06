@@ -1,15 +1,6 @@
 $(document).ready(function () {
 
-    // Adiciona o efeito de deslizar para baixo no form
-    $('header button').click(function () {
-        $('form').slideDown();
-    })
-    // Adiciona o efeito de deslizar para cima no form
-    $('form #bt-cancel').click(function () {
-        $('form').slideUp();
-    })
-
-    $('form').on('submit', function (e) {
+    $('#formulario').on('submit', function (e) {
         e.preventDefault();
         const nameContact = $('#nome').val();
         const numberContact = $('#fone').val();
@@ -22,7 +13,7 @@ $(document).ready(function () {
         `).appendTo(novoItem);
 
 
-        $(novoItem).appendTo('#tbody-table-contacts');
+        $(novoItem).appendTo('#tbody-tabela');
         $(novoItem).fadeIn();
     })
 
